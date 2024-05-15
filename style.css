@@ -133,15 +133,34 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  position: relative;
 }
 
 figure {
   width: 100%;
   height: 70vh;
   overflow-x: auto;
-  overflow-y: hidden;
+  display: flex;
+}
+
+.play {
+  position: absolute;
+  width: calc(var(--vw) * 10vw);
+  height: calc(var(--vw) * 10vw);
+  background-color: #d1bb9ec1;
+  border-radius: 50%;
+  top: 36%;
+  left: -55px;
 
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.play i {
+  font-size: calc(var(--vw) * 4vw);
+  color: #333;
 }
 
 figure::-webkit-scrollbar {
@@ -191,6 +210,15 @@ img {
   main {
     grid-template-columns: 1fr;
     gap: calc(var(--vw) * 1vw);
+  }
+
+  .play {
+    position: absolute;
+    width: calc(var(--vw) * 15vw);
+    height: calc(var(--vw) * 15vw);
+
+    top: 0;
+    left: 36%;
   }
 
   /* left-cnter */
