@@ -20,9 +20,9 @@ body {
   overflow-y: auto;
 }
 
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
   display: none;
-}
+} */
 
 :root {
   --vw: 1;
@@ -35,7 +35,7 @@ main {
   grid-template-columns: 1fr 1fr;
   gap: calc(var(--vw) * 2vw);
 
-  padding: calc(var(--vw) * 3.2vw) calc(var(--vw) * 3vw);
+  padding: calc(var(--vw) * 2.2vw) calc(var(--vw) * 3vw);
 }
 
 .left {
